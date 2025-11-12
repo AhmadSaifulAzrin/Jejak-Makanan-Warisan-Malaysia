@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <br></br>
+    <title>Details: Hinava Gunapan</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- GAYA INTERNAL: Mengekalkan Justify tanpa link fail external. 
+         Ini adalah cara paling kemas untuk override Bootstrap tanpa fail CSS lain.
+    -->
+    <style>
+        /* FIX: Tambah balik kelas text-justify yang telah dibuang dari Bootstrap 5 */
+        .text-justify {
+            text-align: justify !important; 
+        }
+
+        /* Gaya custom untuk link navigasi aktif dalam tema Merah (diambil dari custom-bootstrap.css) */
+        .navbar-nav .nav-link.active {
+            background-color: #4026b5; /* Versi Merah yang sedikit gelap */
+            color: #ffffff !important;
+            border-radius: 4px;
+            padding: 8px 15px !important;
+        }
+
+        /* Padding untuk body supaya tidak tersembunyi di bawah fixed navbar */
+        body {
+            padding-top: 56px; /* Saiz standard navbar fixed-top di mobile */
+        }
+
+        /* Gaya custom untuk span wajib (contoh: status table) */
+        .text-success { color: #28a745 !important; }
+        .text-warning { color: #ffc107 !important; }
+    </style>
+    <!-- End GAYA INTERNAL -->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jejak Makanan</a>
+            <!-- Nav Bar items -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Utama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Maklum Balas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Tentang</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Tambah padding-top untuk elak content tersembunyi di bawah fixed-top navbar -->
+    <main class="container-fluid pt-3"> 
+        <br>
+        <h1 class="my-4 text-center text-danger">Hinava Gunapan</h1>
+        
+        <div class="row g-3">
+            
+            <div class="col-12 col-md-6">
+                <img src="images/Hinava_Ginapan.jpg" class="img-fluid rounded shadow" alt="ninava_gunapan
+            </div>
+
+            <div class="col-12 col-md-6">
+                <h2>Tahukah Anda?</h2>
+                
+                <!-- Paragraf ini akan di-Justify menggunakan kelas text-justify yang didefinisikan secara internal -->
+                <p class="text-justify">Hinava Ginapan ialah hidangan tradisional suku Kadazan-Dusun di Sabah yang diperbuat daripada isi ikan segar yang 'dimasak' dengan perahan jus limau nipis, mirip sushi. Ia dicampur dengan bahan-bahan seperti biji buah bambangan parut, cili merah, halia, bawang merah dan garam. Hidangan ini popular dalam majlis istimewa dan perayaan seperti Pesta Kaamatan.</p>
+                
+                <p>
+                    Harga purata: <span class="badge bg-success">RM 9.00</span>. 
+                </p>
+                <a href="map_video_hinava_gunapan.html"btn btn-outline-danger mt-3">Lihat Lokasi & Video </a>
+            </div>
+            
+        </div> 
+
+        <h2 class="mt-5 mb-3">Komponen Ramuan</h2>
+        
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Bahan Utama</th>
+                        <th>Keterangan</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                    <tr>
+                        <td>Isi ikan segar</td>
+                        <td>Biasanya menggunakan ikan tenggiri atau yu, tetapi sotong atau udang juga boleh digunakan.</td>
+                        <td><span class="text-success">Wajib</span></td>
+                    </tr>
+                    <tr>
+                        <td>Jus limau</td>
+                        <td>Jus limau nipis atau limau kasturi digunakan untuk "memasak" ikan tanpa haba.</td>
+                        <td><span class="text-success">Wajib</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bahan-bahan lain</td>
+                        <td>Cili merah, halia, bawang merah, dan garam.</td>
+                        <td><span class="text-success">Wajib</span></td>
+                    </tr>
+                    <tr>
+                        <td>Biji buah bambangan</td>
+                        <td>Biji buah bambangan yang diparut adalah bahan khas untuk menambah rasa unik.</td>
+                        <td><span class="text-success">Wajib</span></td>
+                </tbody>
+            </table>
+        </div> 
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5 border-top">
+        &copy; 2025 Jejak Makanan Warisan Malaysia
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

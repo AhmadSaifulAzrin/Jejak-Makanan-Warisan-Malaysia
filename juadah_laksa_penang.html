@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <br></br>
+    <title>Details: Laksa Penang</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- GAYA INTERNAL: Mengekalkan Justify tanpa link fail external. 
+         Ini adalah cara paling kemas untuk override Bootstrap tanpa fail CSS lain.
+    -->
+    <style>
+        /* FIX: Tambah balik kelas text-justify yang telah dibuang dari Bootstrap 5 */
+        .text-justify {
+            text-align: justify !important; 
+        }
+
+        /* Gaya custom untuk link navigasi aktif dalam tema Merah (diambil dari custom-bootstrap.css) */
+        .navbar-nav .nav-link.active {
+            background-color: #4026b5; /* Versi Merah yang sedikit gelap */
+            color: #ffffff !important;
+            border-radius: 4px;
+            padding: 8px 15px !important;
+        }
+
+        /* Padding untuk body supaya tidak tersembunyi di bawah fixed navbar */
+        body {
+            padding-top: 56px; /* Saiz standard navbar fixed-top di mobile */
+        }
+
+        /* Gaya custom untuk span wajib (contoh: status table) */
+        .text-success { color: #28a745 !important; }
+        .text-warning { color: #ffc107 !important; }
+    </style>
+    <!-- End GAYA INTERNAL -->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top"> 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jejak Makanan</a>
+            <!-- Nav Bar items -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Utama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Maklum Balas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Tentang</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Tambah padding-top untuk elak content tersembunyi di bawah fixed-top navbar -->
+    <main class="container-fluid pt-3"> 
+        <br>
+        <h1 class="my-4 text-center text-danger">Laksa Penang</h1>
+        
+        <div class="row g-3">
+            
+            <div class="col-12 col-md-6">
+                <img src="images/laksa_penang.jpg" class="img-fluid rounded shadow" alt="Laksa Penang">
+            </div>
+
+            <div class="col-12 col-md-6">
+                <h2>Tahukah Anda?</h2>
+                
+                <!-- Paragraf ini akan di-Justify menggunakan kelas text-justify yang didefinisikan secara internal -->
+                <p class="text-justify">Laksa Penang, atau juga dikenali sebagai Asam Laksa Penang, ialah sejenis mi kuah ikan yang pekat dan rasanya masam-manis pedas, disajikan dengan mi laksa. Hidangan ini menggunakan kuah yang berasaskan ikan, yang diperisakan dengan herba seperti bunga kantan dan daun kesum, serta dibumbui belacan. Toppingnya pula termasuklah hirisan timun, nanas, bawang, daun selada, dan cili, serta ditabur dengan ikan goreng yang disiat. </p>
+                
+                <p>
+                    Harga purata: <span class="badge bg-success">RM 8.00</span>. 
+                </p>
+                <a href="map_video_laksa_penang.html" class="btn btn-outline-danger mt-3">Lihat Lokasi & Video </a>
+            </div>
+            
+        </div> 
+
+        <h2 class="mt-5 mb-3">Komponen Ramuan</h2>
+        
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Bahan Utama</th>
+                        <th>Keterangan</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Untuk kuah</td>
+                        <td>Ikan (seperti ikan kembung atau selayang), daun kesum, bunga kantan, asam keping, belacan, bawang besar, dan cili kering.</td>
+                        <td><span class="text-success">Wajib</span></td>
+                    </tr>
+                    <tr>
+                        <td>Untuk mi</td>
+                        <td>Mi laksa.</td>
+                        <td><span class="text-success">Wajib</span></td>
+                    </tr>
+                    <tr>
+                        <td>Untuk topping</td>
+                        <td>Timun, nanas, daun selada, bawang merah, limau kasturi, dan cili.</td>
+                        <td><span class="text-success">Wajib</span></td>
+                    </tr>
+                    <tr>
+                        <td>Protein tambahan</td>
+                        <td>Ikan yang disiat atau telur rebus. </td>
+                        <td><span class="text-success">Wajib</span></td>
+                    </tr>
+                    <tr>
+                        <td>Kuahnya (ciri khas)</td>
+                        <td>Peppery and tangy, menggunakan ikan sebagai bahan asas kuah.</td>
+                        <td><span class="text-warning">Info tambahan</span></td>
+                    </tr>
+                    <tr>
+                        <td>Rasa (ciri khas)</td>
+                        <td>Gabungan rasa masam, manis, dan pedas yang seimbang, dicampur dengan rasa masam-masam pedas daripada cili kering dan asam.</td>
+                        <td><span class="text-warning">Info tambahan</span></td>
+                    </tr>
+                    <tr>
+                        <td>Topping (ciri khas)</td>
+                        <td>Pelbagai jenis sayuran seperti timun, nanas, dan bawang yang dihiris halus, bersama-sama hirisan ikan yang disiat. </td>
+                        <td><span class="text-warning">Info tambahan</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5 border-top">
+        &copy; 2025 Jejak Makanan Warisan Malaysia
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
